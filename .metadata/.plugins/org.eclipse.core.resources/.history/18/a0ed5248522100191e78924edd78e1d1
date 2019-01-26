@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class One {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		System.out.println("nihao");
+		int i; 
+		int num;
+		int sum = 0;
+		num = in.nextInt();
+		while(num>0)
+		{
+			num=num/10;
+			sum++;
+			
+			System.out.println(num);
+
+		}
+	System.out.println(sum);
+	}
+}
