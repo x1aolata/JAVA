@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Rehearsal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		int i;
+		boolean a = true;
+		OUT:
+		for (i = 0; i < 12; i++) 
+		{
+
+			System.out.println("主循环");
+			
+			for (int j = 0; j < 13; j++) 
+			{
+				if (a) 
+				{
+					System.out.println("副循环");
+					break OUT;
+					
+				}
+				else 
+				{
+					System.out.println("elee");
+				}
+
+			}
+		}
+	}
+}
