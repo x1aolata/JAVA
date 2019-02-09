@@ -1,31 +1,38 @@
 package cd;
 
-public class CD {
-	private String title;
+public class CD extends Item {
+
 	private String artist;
 	private int numofTracks;
-	private int playingTime;
-	private boolean gotIt = false;
-	private String comment;
 
-	public CD(String title, String artist, int numofTracks, int playingTime, String comment) {
-//		super();
-		this.title = title;
-		this.artist = artist;
-		this.numofTracks = numofTracks;
-		this.playingTime = playingTime;
-		this.comment = comment;
-	}
+//	public CD(String title, String artist, int numofTracks, int playingTime, String comment) {
+//		super(title);
+//		
+//		this.artist = artist;
+//		this.numofTracks = numofTracks;
+//		this.playingTime = playingTime;
+//		this.comment = comment;
+//	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
 
+	public CD(String title, int playingTime, boolean gotIt, String comment, String artist, int numofTracks) {
+		super(title, playingTime, gotIt, comment);
+		this.artist = artist;
+		this.numofTracks = numofTracks;
+	}
+
 	public void print() {
 		// TODO Auto-generated method stub
 
-		System.out.println(title + ":" + artist);
+		System.out.print("CD:");
+
+		super.print();
+
+		System.out.print(":" + artist);
 
 	}
 

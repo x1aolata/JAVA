@@ -4,23 +4,35 @@ import java.util.ArrayList;
 
 public class Database {
 
-	private ArrayList<CD> listCD=new ArrayList<CD>();
-	private ArrayList<DVD> listDVD=new ArrayList<DVD>();
-	public void add(CD cd) {
-		listCD.add(cd);
+//	private ArrayList<CD> listCD=new ArrayList<CD>();
+//	private ArrayList<DVD> listDVD=new ArrayList<DVD>();
+	private ArrayList<Item> listItem=new ArrayList<Item>();
+//	public void add(CD cd) {
+//		listCD.add(cd);
+//		
+//	}
+	
+	public void add(Item item)
+	{
+		listItem.add(item);
 		
 	}
 	public void list () {
-		for (CD cd : listCD)
-		{
-			cd.print();
-			
-		}
+//		for (CD cd : listCD)
+//		{
+//			cd.print();
+//			
+//		}
+		for (Item item : listItem)
+			{
+				item.print();
+				
+			}
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Database db =new Database();
-		db.add (new CD("abc","abc",4, 70, ".."));
+		db.add (new CD("abc",4,false,"abc", "..", 70));
 		db.list();
 		
 
