@@ -1,5 +1,9 @@
 package cellmachine;
 
+import java.awt.BorderLayout;
+
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import cell.Cell;
@@ -29,6 +33,9 @@ public class CellMachine {
 		frame.setResizable(false);//不可以改变大小
 		frame.setTitle("Cells");//名字是Cells
 		frame.add(view);//加入view
+		JButton btnStep=new JButton("一次");
+		frame.add(btnStep,BorderLayout.EAST);
+		btnStep.addActionListener(new ActionListener());
 		frame.pack();//自动调整大小
 		frame.setVisible(true);
 		
