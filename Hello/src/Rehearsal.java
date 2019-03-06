@@ -6,7 +6,7 @@ public class Rehearsal {
 		// TODO Auto-generated method stub
 		
 		
-		System.out.println("ÄãºÃ°¡£¬ÅóÓÑ£¡");
+		System.out.println(args  );
 		
 	}
 }
